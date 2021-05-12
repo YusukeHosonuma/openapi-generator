@@ -210,7 +210,7 @@ module Petstore
           type: "api_key",
           in: "header",
           key: "api_key",
-          value: api_key_with_prefix("api_key")
+          value: "XXX"#api_key_with_prefix("api_key")
         },
         "petstore_auth" => {
           type: "oauth2",
