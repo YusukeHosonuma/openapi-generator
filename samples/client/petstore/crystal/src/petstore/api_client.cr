@@ -335,6 +335,7 @@ module Petstore
     # @return [Typhoeus::Request] A Typhoeus Request
     def build_request(http_method, path, request, opts = {} of Symbol => String)
       url = build_request_url(path, opts)
+      puts "⭐ #{url}"
       http_method = http_method.to_sym.downcase
 
       header_params = @default_headers.merge(opts[:header_params] || {} of Symbole => String)
