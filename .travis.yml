@@ -78,7 +78,7 @@ before_install:
   # install crystal
   - echo 'deb http://download.opensuse.org/repositories/devel:/languages:/crystal/xUbuntu_16.04/ /' | sudo tee /etc/apt/sources.list.d/devel:languages:crystal.list
   - curl -fsSL https://download.opensuse.org/repositories/devel:languages:crystal/xUbuntu_16.04/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/devel_languages_crystal.gpg > /dev/null
-  - sudo apt-get update
+  - sudo apt update
   - sudo apt install crystal
   - crystal --version
   - shards --version
